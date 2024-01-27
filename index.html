@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=DM+Serif+Display&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>PokerShopPro</title>
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top" id="cabecalho">
+        <div class="container">
+            <a class="navbar-brand mt-1" href="#">
+                <img class="mb-2" id="logo" src="./images/logo.jpg"> 
+                <span class="fw-bold fs-3">Poker Shop Pro</span>
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#inicio" class="nav-link active">
+                            <i class="bi bi-house-door-fill me-1"></i>
+                            Início
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#destaques" class="nav-link">
+                            <i class="bi bi-brightness-high-fill me-1"></i>
+                            Destaques
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#eventos" class="nav-link">
+                            <i class="bi bi-calendar-check-fill me-1"></i>
+                            Eventos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#itens" class="nav-link">
+                            <i class="bi bi-cart-plus-fill me-1"></i>
+                            Nossos itens
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-chat-left-text-fill me-1"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
+        <section id="inicio">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img class="w-100" src="images/slides/slide1.jpg" alt="Uma mão de áses">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="w-100" src="images/slides/slide2.jpg" alt="Fichas de Poker">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="w-100" src="images/slides/slide3.jpg" alt="Baralho e fichas de Poker">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+        </section>
+        <section id="destaques">
+            <div class="container">
+                <h2>!Destaques!</h2>
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+                        <div class="col">
+                            <div class="card">
+                                <img src="images/destaque/kit1.jpg" class="card-img-top img-fluid rounded">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center fw-bold">Kit Iniciante</h4>
+                                    <button type="button" class="btn btn-dark btn-product w-100">
+                                        Ver mais detalhes
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="images/destaque/kit2.jpg" class="card-img-top img-fluid rounded">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center fw-bold">Kit Aprendiz</h4>
+                                    <button type="button" class="btn btn-dark btn-product w-100">
+                                        Ver mais detalhes
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="images/destaque/kit3.jpg" class="card-img-top img-fluid rounded">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center fw-bold">Kit Pro</h4>
+                                    <button type="button" class="btn btn-dark btn-product w-100">
+                                        Ver mais detalhes
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="images/destaque/time1.png" class="card-img-top img-fluid rounded">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center fw-bold">Kit Santos</h4>
+                                    <button type="button" class="btn btn-dark btn-product w-100">
+                                        Ver mais detalhes
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="images/destaque/time2.png" class="card-img-top img-fluid rounded">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center fw-bold">Kit Fluminense</h4>
+                                    <button type="button" class="btn btn-dark btn-product w-100">
+                                        Ver mais detalhes
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="images/destaque/time3.png" class="card-img-top img-fluid rounded">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center fw-bold">Kit Vasco</h4>
+                                    <button type="button" class="btn btn-dark btn-product w-100">
+                                        Ver mais detalhes
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <section class="pt-5">
+            <div id="eventos">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="section-title text-center">!Eventos!</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="images/eventos/evento1.jpg" alt="Torneio de Poker" class="d-block w-100 mb-2  rounded">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images/eventos/evento2.jpg" alt="Torneio de Poker" class="d-block w-100 mb-2  rounded">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images/eventos/evento3.jpg" alt="Torneio de Poker" class="d-block w-100 mb-2  rounded">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="itens" class="pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">
+                        !Nossos itens!
+                    </h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-itens">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#mesas" class="fw-bold text-start nav-link text-colored active">Mesas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#baralhos" class="fw-bold text-start nav-link text-colored">Baralhos</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#fichas" class="fw-bold text-start nav-link text-colored">Fichas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#combos" class="fw-bold text-start nav-link text-colored">Combos</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#acessorios" class="fw-bold text-start nav-link text-colored">Acessórios</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="mesas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/itens/mesas/mesa1.png" alt="Mesa de poker">
+                                        <h5 class="text-colored fw-bold mt-2">Mesa de Poker Profissional - TV 10 FT</h5>
+                                        <button type="button" class="btn btn-danger w-100 mb-4">Ver mais detalhes</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/itens/mesas/mesa2.png" alt="Mesa de poker">
+                                        <h5 class="text-colored fw-bold mt-2">Mesa de Poker Profissional - Pro8</h5>
+                                        <button type="button" class="btn btn-danger w-100 mb-4">Ver mais detalhes</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/itens/mesas/mesa3.png" alt="Mesa de poker">
+                                        <h5 class="text-colored fw-bold mt-2">
+                                            Mesas de Poker Luxo - L5</h5>
+                                        <button type="button" class="btn btn-danger w-100 mb-4">Ver mais detalhes</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/itens/mesas/mesa4.png" alt="Mesa de poker">
+                                        <h5 class="text-colored fw-bold mt-2">
+                                            Mesa de Poker e Jantar - Pro5</h5>
+                                        <button type="button" class="btn btn-danger w-100 mb-4">Ver mais detalhes</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/itens/mesas/mesa5.png" alt="Mesa de poker">
+                                        <h5 class="text-colored fw-bold mt-2">
+                                            Mesa de Poker Dobrável - Bra2</h5>
+                                        <button type="button" class="btn btn-danger w-100 mb-4">Ver mais detalhes</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/itens/mesas/mesa6.png" alt="Mesa de poker">
+                                        <h5 class="text-colored fw-bold mt-2">
+                                            Mesa de Poker Dobrável Personalizada</h5>
+                                        <button type="button" class="btn btn-danger w-100 mb-4">Ver mais detalhes</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="baralhos">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/itens/baralhos/baralho1.png" alt="Baralho">
+                                        <h5 class="text-colored fw-bold mt-2">Baralho Black A Prova D'agua - Baralho Preto - Poker Mágica</h5>
+                                        <button type="button" class="btn btn-danger w-100 mb-4">Ver mais detalhes</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/itens/baralhos/baralho2.png" alt="Baralho">
+                                        <h5 class="text-colored fw-bold mt-2">Cartas Baralho Dourado Resistente A Água Anti Rasgo Ouro</h5>
+                                        <button type="button" class="btn btn-danger w-100 mb-4">Ver mais detalhes</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/itens/baralhos/baralho3.png" alt="Baralho">
+                                        <h5 class="text-colored fw-bold mt-2">Baralho Preto Ouro 24k Poker Prova D' Água Cor Do Dorso Preto</h5>
+                                        <button type="button" class="btn btn-danger w-100 mb-4">Ver mais detalhes</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/itens/baralhos/baralho4.png" alt="Baralho">
+                                        <h5 class="text-colored fw-bold mt-2">Baralho Bicycle Stargazer Cartas Premium Deck</h5>
+                                        <button type="button" class="btn btn-danger w-100 mb-4">Ver mais detalhes</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/itens/baralhos/baralho5.png" alt="Baralho">
+                                        <h5 class="text-colored fw-bold mt-2">Baralhos Copag Estojo Duplos 100% Plástico - Class Modern</h5>
+                                        <button type="button" class="btn btn-danger w-100 mb-4">Ver mais detalhes</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/itens/baralhos/baralho6.png" alt="Baralho">
+                                        <h5 class="text-colored fw-bold mt-2">Baralho Dourado Ouro Jogos Poker Truco Resistente Cartas</h5>
+                                        <button type="button" class="btn btn-danger w-100 mb-4">Ver mais detalhes</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="fichas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/itens/fichas/fichas1.png" alt="Fichas de Poker">
+                                        <h5 class="text-colored fw-bold mt-2">Kit Fichas Par Jogo De Poker Dealer C/ Numeração 100un</h5>
+                                        <button type="button" class="btn btn-danger w-100 mb-4">Ver mais detalhes</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/itens/fichas/fichas2.png" alt="Fichas de Poker">
+                                        <h5 class="text-colored fw-bold mt-2">Fichas Jogo Poker Dealer Enumeradas Profissional 100 Peças</h5>
+                                        <button type="button" class="btn btn-danger w-100 mb-4">Ver mais detalhes</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/itens/fichas/fichas3.png" alt="Fichas de Poker">
+                                        <h5 class="text-colored fw-bold mt-2">Kit Fichas Numeradas Jogo Profissional Poker 100 Fichas
+                                        </h5>
+                                        <button type="button" class="btn btn-danger w-100 mb-4">Ver mais detalhes</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/itens/fichas/fichas4.png" alt="Fichas de Poker">
+                                        <h5 class="text-colored fw-bold mt-2">Kit Com 10 Fichas De Jogo Poker Com Numeração</h5>
+                                        <button type="button" class="btn btn-danger w-100 mb-4">Ver mais detalhes</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/itens/fichas/fichas5.png" alt="Fichas de Poker">
+                                        <h5 class="text-colored fw-bold mt-2">Ficha De Poker 50 Fichas Numeradas Pacote Com 50 Un.</h5>
+                                        <button type="button" class="btn btn-danger w-100 mb-4">Ver mais detalhes</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/itens/fichas/fichas6.png" alt="Fichas de Poker">
+                                        <h5 class="text-colored fw-bold mt-2">3 Fichas Poker Luxo Dealer, Big Blind, Small Blind, Botão</h5>
+                                        <button type="button" class="btn btn-danger w-100 mb-4">Ver mais detalhes</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="combos">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/itens/combos/kit1.jpg" alt="Combo de Poker">
+                                        <h5 class="text-colored fw-bold mt-2">Kit Poker Profissional Em Lata 100 Fichas Numeradas Dealer</h5>
+                                        <button type="button" class="btn btn-danger w-100 mb-4">Ver mais detalhes</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/itens/combos/kit2.jpg" alt="Combo de Poker">
+                                        <h5 class="text-colored fw-bold mt-2">Kit Jogo Lata De Poker 200 Fichas Numeradas Profissional</h5>
+                                        <button type="button" class="btn btn-danger w-100 mb-4">Ver mais detalhes</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/itens/combos/kit6.png" alt="Combo de Poker">
+                                        <h5 class="text-colored fw-bold mt-2">Jogo De Poker Maleta 200 Fichas Numeradas 2 Baralho 5 Dados</h5>
+                                        <button type="button" class="btn btn-danger w-100 mb-4">Ver mais detalhes</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/itens/combos/kit3.jpg" alt="Combo de Poker">
+                                        <h5 class="text-colored fw-bold mt-2">Maleta De Poker Completo 500 Fichas 2 Baralhos E 5 Dados</h5>
+                                        <button type="button" class="btn btn-danger w-100 mb-4">Ver mais detalhes</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/itens/combos/kit5.png" alt="Combo de Poker">
+                                        <h5 class="text-colored fw-bold mt-2">Kit Poker Profissional Em Lata 500 Fichas Texas Hold'em Set</h5>
+                                        <button type="button" class="btn btn-danger w-100 mb-4">Ver mais detalhes</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/itens/combos/kit4.png" alt="Combo de Poker">
+                                        <h5 class="text-colored fw-bold mt-2">Kit Poker Profissional Em Lata 600 Fichas Texas Hold'em Set</h5>
+                                        <button type="button" class="btn btn-danger w-100 mb-4">Ver mais detalhes</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="acessorios">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/itens/acessórios/acessorio1.png" alt="Embaralhador de cartas">
+                                        <h5 class="text-colored fw-bold mt-2">Cartões De Embaralhamento De Acessórios 6 Convés</h5>
+                                        <button type="button" class="btn btn-danger w-100 mb-4">Ver mais detalhes</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/itens/acessórios/acessorio2.png" alt="Dealer case">
+                                        <h5 class="text-colored fw-bold mt-2">Cartão De Slider Ou Dealer Mesa Acessórios Claro</h5>
+                                        <button type="button" class="btn btn-danger w-100 mb-4">Ver mais detalhes</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/itens/acessórios/acessorio3.png" alt="Suporte de cartas">
+                                        <h5 class="text-colored fw-bold mt-2">Kit 4 - Suporte Segurador Para Baralho E Cartas</h5>
+                                        <button type="button" class="btn btn-danger w-100 mb-4">Ver mais detalhes</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/itens/acessórios/acessorio4.png" alt="Anel de Poker">
+                                        <h5 class="text-colored fw-bold mt-2">Anel Rotativo Poker Cartas Baralho De Aço Inoxidável</h5>
+                                        <button type="button" class="btn btn-danger w-100 mb-4">Ver mais detalhes</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/itens/acessórios/acessorio5.png" alt="Anel de Poker">
+                                        <h5 class="text-colored fw-bold mt-2">Anel Cartas Poker Vegas Vintage Ajustável Aço 316l Garantia</h5>
+                                        <button type="button" class="btn btn-danger w-100 mb-4">Ver mais detalhes</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/itens/acessórios/acessorio6.png" alt="Caneca de Poker">
+                                        <h5 class="text-colored fw-bold mt-2">Caneca Preta Personalizada Nome Cartas Jogador O Rei Do Poker</h5>
+                                        <button type="button" class="btn btn-danger w-100 mb-4">Ver mais detalhes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center">Fale conosco</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome:</label>
+                                <input type="text" name="nome" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu e-mail:</label>
+                                <input type="email" name="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional):</label>
+                                <input type="tel" name="telefone" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem:</label>
+                                <textarea name="mensagem" id="mensagem" class="form-control" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-dark fw-bold w-100">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5 pt-4">
+                        <img class="d-block w-100" src="images/contato.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="me-2 ms-2">  
+        Desenvolvido por <a href="https://github.com/AndreSchererKunz" target="_blank">A.S.K.</a> | © 2024
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

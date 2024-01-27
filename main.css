@@ -1,0 +1,170 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #1f1e1efb;
+    height: 100%;
+}
+
+.container {
+    max-width: 1280px;
+}
+
+#logo {
+    max-width: 50px;
+    border-radius: 25px;
+    margin-left: 20px;
+}
+
+header {
+    margin: auto;
+    background-color: black;
+    max-width: 100%;
+}
+
+form button {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.navbar-toggler{
+    margin-left: 1em;
+    margin-right: 1em;
+    background-color: #9a0000;
+    margin-bottom: 0.5em;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #9a0000;
+    color: black;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover {
+    color: #9a0000;
+}
+
+.carousel-item img {
+    height: 80vh;
+    object-fit: cover;
+}
+
+.carousel-indicators {
+    padding-bottom: 0.7em;
+}
+
+#destaques h2,
+#eventos h2,
+#itens h2,
+#fale-conosco h2 {
+    font-family: 'Caprasimo', serif;
+    margin-top: 1em;
+    text-align: center;
+    color: #740404;
+    text-decoration: underline;
+}
+
+#eventos {
+    padding-bottom: 2em;
+}
+
+#eventos h2 {
+    padding-bottom: 1em;
+}
+
+.card {
+    background-color: #740404;
+    color: black;
+    box-shadow: #580202 2px 2px 4px;
+    border: 1px solid #580202;
+    margin-top: 2em;
+}
+
+.card img {
+    max-height: 34vh;
+}
+
+.card button {
+    justify-content: center;
+    border: none;
+}
+
+.card button:hover {
+    background-color: black;
+}
+
+#eventos,
+#fale-conosco {
+    background-color: #525151fb;
+}
+
+#eventos img {
+    max-height: 25em;
+}
+
+#itens h5{
+    font-family: 'Caprasimo', serif;
+}
+
+#itens p {
+    color: #fff
+}
+
+#itens img {
+    max-height: 8em;
+}
+
+#itens button {
+    border-radius: 25px;
+}
+
+.nav-itens .nav-link.active {
+    background-color: #740404;
+    color: #fff;
+}
+
+.nav-itens .nav-link:hover,
+.text-colored  {
+    color: #740404;
+}
+
+.nav-itens .nav-link.active:hover {
+    color: #fff;
+}
+
+#fale-conosco img {
+    height: 50vh;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+textarea {
+    resize: none;
+    width: 30px;
+    height: 4em;
+}
+
+#fale-conosco button {
+    margin: 0;
+}
+
+footer {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    border-radius: 25px;
+    padding: 0.5em;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    box-shadow: rgba(0, 0, 0, 0.6) 2px 2px 4px;
+    font-family: 'Caprasimo', serif;
+    color: rgb(255, 255, 255);
+}
+
+footer a {
+    color: rgb(255, 255, 255);
+}
